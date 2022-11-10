@@ -1,0 +1,28 @@
+selectInput : (a box with choices to select from)
+
+use to choose which nations you want to look at
+
+use "fct_reorder" function to reorder nation according to the medals(gold/silver/bronze/total)
+
+fct_reorder(x, y, .desc = F)
+reorder levels x using y
+
+axis.text.y : size(custom)
+
+0 - 40 : 8
+40 + : 4
+
+colors :
+
+gold : geom_segment : goldenrod3
+       geom_point : darkgoldenrod
+        
+silver : geom_segment : grey50
+         geom_point : grey28
+        
+bronze : geom_segment : #cd7f32
+         geom_point : #a46628
+         
+total : geom_segment : bisque1
+       geom_point : darkred
+        
